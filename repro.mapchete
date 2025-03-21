@@ -1,0 +1,14 @@
+process: hillshade.py
+zoom_levels:
+    min: 8
+    max: 12
+input:
+    dem: copernicus_dem_30m_pentlands_sample.tif
+output:
+    format: PNG_hillshade
+    path: /out
+    pixelbuffer: 0
+pyramid:
+    grid: mercator
+process_parameters:
+    resampling: bilinear
